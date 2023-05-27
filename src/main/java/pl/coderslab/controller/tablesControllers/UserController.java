@@ -2,13 +2,16 @@ package pl.coderslab.controller.tablesControllers;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import pl.coderslab.dao.UserDao;
 import pl.coderslab.model.User;
+import pl.coderslab.services.UserService;
 
+import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 
 @Slf4j
@@ -16,6 +19,10 @@ import javax.validation.Valid;
 @RequestMapping("user")
 public class UserController {
 
+    @Autowired
+    HttpSession session;
+    @Autowired
+    UserService userService;
     private final UserDao userDao;
     public UserController(UserDao userDao) {
         this.userDao = userDao;

@@ -30,12 +30,10 @@ public class Visit {
     @Column(name = "description")
     private String description;
 
-    @ManyToMany
-    @JoinColumn(name = "user_id")
-    private List<User> users = new ArrayList<>();
+    @ManyToOne
+    private User user;
 
-    @ManyToMany
-    @JoinColumn(name = "patient_id")
+    @OneToMany
+    @JoinColumn(name = "training_plan_id")
     private List<Patient> patients = new ArrayList<>();
-
 }

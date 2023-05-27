@@ -61,10 +61,10 @@ public class User {
     @Column(name = "doctor") // if user is doctor
     private Integer doctor;
 
+    @Transient
+    private String confirmedPassword;
 
-    @ManyToMany
-    @JoinTable(name = "users_visits",
-            joinColumns = @JoinColumn(name = "user_id"),
-            inverseJoinColumns = @JoinColumn(name = "visit_id"))
+    @OneToMany(mappedBy = "user")
     private List<Visit> visits = new ArrayList<>();
+
 }
