@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-@WebFilter(urlPatterns = {"/patients/*", "/visit/*", "/stats"})
+@WebFilter(urlPatterns = {"/logged/*"})
 public class AutorizationFilter implements Filter {
 
     @Override

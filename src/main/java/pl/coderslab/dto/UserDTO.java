@@ -1,28 +1,17 @@
 package pl.coderslab.dto;
 
-import java.util.Objects;
+import lombok.Getter;
+import lombok.Setter;
 
+import java.util.Objects;
+@Getter
+@Setter
 public class UserDTO {
 
     private Long id;
     private String login;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getLogin() {
-        return login;
-    }
-
-    public void setLogin(String login) {
-        this.login = login;
-    }
-
+    private String firstName;
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -37,6 +26,7 @@ public class UserDTO {
 
         return Objects.hash(id, login);
     }
+
 
     @Override
     public String toString() {

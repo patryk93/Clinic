@@ -13,9 +13,15 @@ import java.time.format.DateTimeFormatter;
 public class HomeController {
 
     private static final String HOME = "views/home";
+    private static final String LOGGED = "views/logged";
     @RequestMapping("/")
     public String getHomepage() {
         return HOME;
+    }
+
+    @RequestMapping("/logged")
+    public String getHomepageLogged() {
+        return LOGGED;
     }
 }
 

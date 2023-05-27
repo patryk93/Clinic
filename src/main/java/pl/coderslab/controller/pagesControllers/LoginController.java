@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.SessionAttribute;
+import pl.coderslab.dao.UserDao;
 import pl.coderslab.dto.LoginDTO;
 import pl.coderslab.dto.UserDTO;
 import pl.coderslab.model.User;
@@ -29,7 +30,7 @@ private static final String LOGGED = "views/logged";
         return LOGIN;
     }
 
-    @PostMapping
+    @PostMapping("login")
     public String processLogin(@SessionAttribute(value = "loggedUser", required = false) UserDTO loggedUser,
                                @ModelAttribute("loginForm") @Valid LoginDTO form, BindingResult result,
                                HttpSession session) {

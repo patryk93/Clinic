@@ -58,7 +58,7 @@
     </form:form>
 </div>
 <div id="back">
-    <a href="/"> <img src="/images/buttonBack.jpg" alt="cofnij" width="250" height="150"></a>
+    <a href="/"> <img src="../images/buttonBack.jpg" alt="cofnij" width="250" height="150"></a>
 </div>
         </div>
     </div>

@@ -23,29 +23,81 @@
 </head>
 
 <body>
-<jsp:include page="header.jsp"/>
+<header class="page-header">
+    <jsp:include page="headerLogged.jsp"/>
+</header>
 
-<section class="padding-large bg-light">
-<div id="box">
-    <c:if test="${not empty loggedUser}">
-        <div id="hello">
 
-            <p >Witaj, ${loggedUser.login}</p>
-        </div>
-<%--        <p id="logout"><a href="/logout"><img src="/images/Log_Out.png"></a></p>--%>
-    </c:if>
-    <div id="tile">
-        <div class="row">
-<%--            <div class="column"><a href="/patients/addPatient"><img src="/images/Add_Patient_Main.png" alt="Dodaj pacjenta" width="222px" height="222px" title="Dodaj pacjenta"/></a></div>--%>
-<%--            <div class="column"><a href="/patients/allPatients"><img src="/images/Patient_List_Main.png" alt="Lista pacjentów" width="222px" height="222px" title="Lista pacjentów"/></a></div>--%>
-        </div>
-        <div class="row">
-<%--            <div class="column"><a href="/visit/allVisits"><img src="/images/Visit_List_Main.png" alt="Lista wizyt" width="222px" height="222px" title="Lista wizyt"/></a></div>--%>
-<%--            <div class="column"><a href="/stats/summary"><img src="/images/Stats_Main.png" alt="Statystyki" width="222px" height="222px" title="Statystyki"/></a></div>--%>
+<section class="dashboard-section">
+    <div class="row dashboard-nowrap">
+        <jsp:include page="dashboard.jsp"/>
+
+        <div class="m-4 p-4 width-medium">
+            <div class="dashboard-header m-4">
+                <div class="dashboard-menu">
+                    <div class="menu-item border-dashed">
+                        <a href="/logged/patient/add">
+                            <i class="far fa-plus-square icon-plus-square"></i>
+                            <span class="title">dodaj pacjenta</span>
+                        </a>
+                    </div>
+                    <div class="menu-item border-dashed">
+                        <a href="/app/plan/add">
+                            <i class="far fa-plus-square icon-plus-square"></i>
+                            <span class="title">dodaj wizytę</span>
+                        </a>
+                    </div>
+                    <div class="menu-item border-dashed">
+                        <a href="/app/recipe/plan/add">
+                            <i class="far fa-plus-square icon-plus-square"></i>
+                            <span class="title">dodaj pacjenta do wizyty</span>
+                        </a>
+                    </div>
+                </div>
+
+<%--                <div class="dashboard-alerts">--%>
+<%--                    <div class="alert-item alert-info">--%>
+<%--                        <i class="fas icon-circle fa-info-circle"></i>--%>
+<%--                        <span class="font-weight-bold">Liczba pacjentów: ${countRecipes}</span>--%>
+<%--                    </div>--%>
+<%--                    <div class="alert-item alert-light">--%>
+<%--                        <i class="far icon-calendar fa-calendar-alt"></i>--%>
+<%--                        <span class="font-weight-bold">Liczba wizyt: ${countPlans}</span>--%>
+<%--                    </div>--%>
+<%--                </div>--%>
+            </div>
+<%--            <div class="m-4 p-4 border-dashed">--%>
+<%--                <h2 class="dashboard-content-title">--%>
+<%--                    <span>Ostatnio dodana wizyta:</span> ${plan.name}--%>
+<%--                </h2>--%>
+<%--                <c:forEach items="${planDetails}" var="planDetail">--%>
+<%--                    <table class="table">--%>
+<%--                        <thead>--%>
+<%--                        <tr class="d-flex">--%>
+<%--                            <th class="col-2">${planDetail.dayName}</th>--%>
+<%--                            <th class="col-8"></th>--%>
+<%--                            <th class="col-2"></th>--%>
+<%--                        </tr>--%>
+<%--                        </thead>--%>
+<%--                        <tbody>--%>
+<%--                        <tr class="d-flex">--%>
+<%--                            <td class="col-2">${planDetail.mealName}</td>--%>
+<%--                            <td class="col-8">${planDetail.recipeDescription}</td>--%>
+<%--                        </tr>--%>
+<%--                        </tbody>--%>
+<%--                    </table>--%>
+<%--                </c:forEach>--%>
+<%--            </div>--%>
         </div>
     </div>
-</div>
 </section>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 
 <jsp:include page="footer.jsp"/>
 </body>

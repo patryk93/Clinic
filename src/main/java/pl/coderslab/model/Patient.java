@@ -36,14 +36,20 @@ public class Patient {
     @Column(name = "phone")
     private String phone;
 
-    @Column(name = "adress")
-    private String adress;
+    @Column(name = "address")
+    private String address;
+
+    @Column(name = "houseNumber")
+    private String houseNumber;
+
+    @Column(name = "apartmentNumber")
+    private String apartmentNumber;
 
     @PESEL
     @Column(name = "pesel")
     private String pesel;
 
-    @NotEmpty
+//    @NotEmpty
     @ManyToMany
     @JoinTable(name = "patients_visits",
             joinColumns = @JoinColumn(name = "patient_id"),

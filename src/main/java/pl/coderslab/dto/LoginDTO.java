@@ -2,6 +2,7 @@ package pl.coderslab.dto;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.validator.constraints.NotBlank;
+import org.mindrot.jbcrypt.BCrypt;
 
 import javax.validation.constraints.NotNull;
 import java.util.Objects;
