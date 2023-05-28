@@ -45,7 +45,7 @@ public class RegisterController {
         }
         try {
             registerService.register(form);
-            return LOGGED;
+            return "redirect:/";
         } catch (IllegalArgumentException iae) {
             iae.printStackTrace();
             results.rejectValue("login", "errors.nonunique", "Login lub E-mail już istnieje");

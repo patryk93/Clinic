@@ -12,12 +12,12 @@
 </head>
 <body>
 <ul class="nav flex-column long-bg">
-    <li class="nav-item">
-        <a class="nav-link" href="/app/editUserData">
-            <span>Mój profil</span>
-            <i class="fas fa-angle-right"></i>
-        </a>
-    </li>
+<%--    <li class="nav-item">--%>
+<%--        <a class="nav-link" href="/logged/user/profile">--%>
+<%--            <span>Mój profil</span>--%>
+<%--            <i class="fas fa-angle-right"></i>--%>
+<%--        </a>--%>
+<%--    </li>--%>
     <li class="nav-item">
         <a class="nav-link" href="/logged">
             <span>Pulpit</span>
@@ -31,7 +31,7 @@
         </a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="/app/plan/list">
+        <a class="nav-link" href="/logged/visit/all">
             <span>Wizyty</span>
             <i class="fas fa-angle-right"></i>
         </a>

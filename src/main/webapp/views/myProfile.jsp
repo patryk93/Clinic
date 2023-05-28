@@ -14,7 +14,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Dodawanie nowego pacjenta</title>
+    <title>Mój profil</title>
     <link rel="stylesheet" href='<c:url value="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"/>' integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
           crossorigin="anonymous">
     <link href='<c:url value="https://fonts.googleapis.com/css?family=Charmonman:400,700|Open+Sans:400,600,700&amp;subset=latin-ext"/>'
@@ -34,11 +34,10 @@
         <jsp:include page="dashboard.jsp"/>
         <div id="patient">
             <div id="data">
-                <h1> Lista pacjentów </h1>
+                <h1> Moje dane: </h1>
                 <br/>
                 <div id="table">
                     <table>
-                        <th>ID</th>
                         <th>Imię</th>
                         <th>Nazwisko</th>
                         <%--                        <th>Wyświetl kartę</th>--%>
@@ -46,16 +45,13 @@
                         <%--                        <th>Edytuj</th>--%>
                         <%--                        <th>Usuń</th>--%>
 
-                        <c:forEach items="${patients}" var="patient">
+                        <c:forEach items="${profile}" var="prof">
                             <tr>
                                 <td>
-                                        ${patient.id}
+                                        ${prof.firstName}
                                 </td>
                                 <td>
-                                        ${patient.firstName}
-                                </td>
-                                <td>
-                                        ${patient.lastName}
+                                        ${prof.lastName}
                                 </td>
                                     <%--                                <td>--%>
                                     <%--                                    <a href="/patients/card/${patient.id}">wyświetl</a>--%>

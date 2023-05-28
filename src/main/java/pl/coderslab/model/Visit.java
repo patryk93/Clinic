@@ -6,6 +6,7 @@ import lombok.Setter;
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,10 +31,16 @@ public class Visit {
     @Column(name = "description")
     private String description;
 
+    @Column(name = "patientDetails")
+    private String patientDetails;
+
+    @ManyToOne(optional = false, fetch = FetchType.EAGER)
+    private Patient patient;
+
     @ManyToOne
     private User user;
 
     @OneToMany
-    @JoinColumn(name = "training_plan_id")
+    @JoinColumn(name = "patient_id")
     private List<Patient> patients = new ArrayList<>();
 }

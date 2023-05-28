@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import pl.coderslab.dao.PatientDao;
+import pl.coderslab.dao.VisitDao;
 import pl.coderslab.model.Patient;
 
 import javax.validation.Valid;
@@ -24,9 +25,11 @@ public class LoggedController {
 
     private static final String ADD_PATIENT = "views/addPatient";
     private static final String ALL_PATIENTS = "views/allPatients";
+    private static final String ALL_VISITS = "views/allVisits";
     private static final String MY_PROFILE = "views/myProfile";
 
     private final PatientDao patientDao;
+    private final VisitDao visitDao;
 
     @GetMapping("patient/add")
     public String showAddPatientForm(Model model) {
@@ -52,6 +55,12 @@ public class LoggedController {
     public String showAllPatients(Model model) {
         model.addAttribute("patients", patientDao.findAll());
         return ALL_PATIENTS;
+    }
+
+    @GetMapping("visit/all")
+    public String showAllVisits(Model model) {
+        model.addAttribute("visits", visitDao.findAll());
+        return ALL_VISITS;
     }
 
     @GetMapping("user/profile")

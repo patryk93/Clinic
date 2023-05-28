@@ -100,8 +100,8 @@
 <%--                    <form:errors path="exam"/>--%>
                     <br/>
                     <br/>
-                    <input type="submit" id="confirm" value="Dodaj"/>
-                    <input type="reset" id="clear" value="Wyczyść"/>
+                <button class="btn btn-color rounded-0" id="confirm" type="submit">Dodaj</button>
+                <button class="btn btn-color rounded-0" id="clear" type="reset">Wyczyść</button>
                     </form:form>
 <%--                </div>--%>
             </div>
