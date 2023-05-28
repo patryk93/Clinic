@@ -34,7 +34,7 @@
     <jsp:include page="dashboard.jsp"/>
     <div id="patient">
       <div id="data">
-        <h1> Wszystkie wizyty </h1>
+        <h1> Lista wizyt </h1>
         <br/>
         <div id="table">
           <table>
