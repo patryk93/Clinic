@@ -34,80 +34,30 @@
         <jsp:include page="dashboard.jsp"/>
         <div id="patient">
             <div id="data">
-                <h1> Dodawanie nowej wizyty </h1>
+                <h1> Dodawanie nowej wizyty dla pacjenta: ${patient.firstName} ${patient.lastName}</h1>
                 <br/>
-                <h4> Dane kontaktowe: </h4>
-                <br/>
-                <form:form modelAttribute="visitForm" method="post">
+                <form:form modelAttribute="visitForm" method="post" action="/logged/patient/logged/visit/add">
 
-<%--                <form:input class="form-control" path="pesel" placeholder="Pesel"/><br/>--%>
-<%--                <form:errors path="pesel"/>--%>
-<%--                <br/>--%>
-<%--                <form:input class="form-control" path="firstName" placeholder="Imię"/><br/>--%>
-<%--                <form:errors path="firstName"/>--%>
-<%--                <br/>--%>
-<%--                <form:input class="form-control" path="lastName" placeholder="Nazwisko"/><br/>--%>
-<%--                <form:errors path="lastName"/>--%>
-<%--                <br/>--%>
-<%--                <form:input class="form-control" path="address" placeholder="Ulica"/><br/>--%>
-<%--                <form:errors path="address"/>--%>
-<%--                <br/>--%>
-<%--                <form:input class="form-control" path="houseNumber" placeholder="Numer domu"/><br/>--%>
-<%--                <form:errors path="houseNumber"/>--%>
-<%--                <br/>--%>
-<%--                <form:input class="form-control" path="apartmentNumber" placeholder="Numer mieszkania"/><br/>--%>
-<%--                <form:errors path="apartmentNumber"/>--%>
-<%--                <br/>--%>
-<%--                <form:input class="form-control" path="phone" placeholder="Numer telefonu"/><br/>--%>
-<%--                <form:errors path="phone"/>--%>
-<%--                <br/>--%>
-<%--                <form:input class="form-control" path="email" placeholder="E-mail"/><br/>--%>
-<%--                <form:errors path="email"/>--%>
-<%--                <br/>--%>
-<%--                <br/>--%>
-<%--            </div>--%>
-
-
-                <%--                <div id="card">--%>
-                <%--                    <h4>Karta badania:</h4>--%>
-                <%--                    <br/>--%>
-                <%--                    <form:input class="add" path="diagnosis" placeholder="Rozpoznanie"/><br/>--%>
-                <%--                    <form:errors path="diagnosis"/>--%>
-                <%--                    <br/>--%>
-                <%--                    <form:input class="add" path="symptoms" placeholder="Objawy"/><br/>--%>
-                <%--                    <form:errors path="symptoms"/>--%>
-                <%--                    <br/>--%>
-                <%--                    <form:input class="add" path="diseases" placeholder="Choroby współistniejące"/><br/>--%>
-                <%--                    <form:errors path="diseases"/>--%>
-                <%--                    <br/>--%>
-                <%--                    <form:input class="add" path="functioning" placeholder="Funkcjonowanie"/><br/>--%>
-                <%--                    <form:errors path="functioning"/>--%>
-                <%--                    <br/>--%>
-                <%--                    <form:input class="add" path="activity" placeholder="Aktywność fizyczna"/><br/>--%>
-                <%--                    <form:errors path="activity"/>--%>
-                <%--                    <br/>--%>
-                <%--                    <form:input class="add" path="rehab" placeholder="Dotychczasowa rehabilitacja"/><br/>--%>
-                <%--                    <form:errors path="rehab"/>--%>
-                <%--                    <br/>--%>
-                <%--                    <form:input class="add" path="medicines" placeholder="Leki"/><br/>--%>
-                <%--                    <form:errors path="medicines"/>--%>
-                <%--                    <br/>--%>
-                <%--                    <form:input class="add" path="procedures" placeholder="Zabiegi operacyjne, urazy"/><br/>--%>
-                <%--                    <form:errors path="procedures"/>--%>
-                <%--                    <br/>--%>
-                <%--                    <form:input class="add" path="drugs" placeholder="Używki"/><br/>--%>
-                <%--                    <form:errors path="drugs"/>--%>
-                <%--                    <br/>--%>
-                <%--                    <form:textarea class="add" path="exam" placeholder="Badanie"/><br/>--%>
-                <%--                    <form:errors path="exam"/>--%>
+                    <form:input path="date" id="date" class="form-control" name="date" placeholder="Data (wzór: DD/MM/YY HH:MM)"/><br/>
+                    <form:errors path="date"/>
+                    <br/>
+                    <form:input path="cost" id="cost" class="form-control" placeholder="Koszt"/><br/>
+                    <form:errors path="cost"/>
+                    <br/>
+                    <form:input path="description" id="description" class="form-control" placeholder="Opis"/><br/>
+                    <form:errors path="description"/>
+                    <form:hidden path="patientId" id="patientId" />
+                    <form:hidden path="patientDetails" id="patientDetails" />
+                    <br/>
+                    <br/>
             <br/>
             <br/>
             <button class="btn btn-color rounded-0" id="confirm" type="submit">Dodaj</button>
             <button class="btn btn-color rounded-0" id="clear" type="reset">Wyczyść</button>
             </form:form>
-            <%--                </div>--%>
         </div>
         <br/>
+        </div>
 </section>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

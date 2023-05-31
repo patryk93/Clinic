@@ -34,10 +34,10 @@
     </div>
     <h1 class="text-color-darker">Logowanie</h1>
     <form:input class="form-control" path="login" id="login" placeholder="Login"/><br/>
-    <form:errors path="login" cssClass="error"/><br/>
+    <form:errors path="login" /><br/>
 
     <form:input class="form-control" path="password" id="password" type="Password" placeholder="Hasło"/><br/>
-    <form:errors path="password" cssClass="error"/><br/>
+    <form:errors path="password" /><br/>
 
     <button class="btn btn-color rounded-0" type="submit">Zaloguj</button>
     <br/>

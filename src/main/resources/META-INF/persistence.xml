@@ -16,7 +16,7 @@
 <!--            drop-and-create - usunie a następnie utworzy-->
 <!--            drop - usunie elementy bazy danych zgodne z adnotacjami-->
 <!--                        <property name="javax.persistence.schema-generation.database.action"-->
-<!--                                  value="drop-and-create"/>-->
+<!--                                  value="drop"/>-->
 <!--            Poniżej możemy dodać skrypt dodający dane do naszej bazy danych:-->
 <!--            <property name="javax.persistence.sql-load-script-source"-->
 <!--                      value="META-INF/sql/data.sql" />-->

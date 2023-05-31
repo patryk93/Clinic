@@ -41,12 +41,12 @@
                             <span class="title">dodaj pacjenta</span>
                         </a>
                     </div>
-                    <div class="menu-item border-dashed">
-                        <a href="/logged/visit/add">
-                            <i class="far fa-plus-square icon-plus-square"></i>
-                            <span class="title">dodaj wizytę</span>
-                        </a>
-                    </div>
+<%--                    <div class="menu-item border-dashed">--%>
+<%--                        <a href="/logged/patient/logged/visit/add">--%>
+<%--                            <i class="far fa-plus-square icon-plus-square"></i>--%>
+<%--                            <span class="title">dodaj wizytę</span>--%>
+<%--                        </a>--%>
+<%--                    </div>--%>
 <%--                    <div class="menu-item border-dashed">--%>
 <%--                        <a href="/app/recipe/plan/add">--%>
 <%--                            <i class="far fa-plus-square icon-plus-square"></i>--%>

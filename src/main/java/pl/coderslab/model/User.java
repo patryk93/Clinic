@@ -64,7 +64,5 @@ public class User {
     @Transient
     private String confirmedPassword;
 
-    @OneToMany(mappedBy = "user")
-    private List<Visit> visits = new ArrayList<>();
 
 }

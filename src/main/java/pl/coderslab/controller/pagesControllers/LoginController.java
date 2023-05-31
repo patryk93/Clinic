@@ -24,11 +24,13 @@ private static final String LOGGED = "views/logged";
 
     @Autowired
     private LoginService loginService;
+
     @GetMapping("login")
     public String login(Model model) {
         model.addAttribute("loginForm", new User());
         return LOGIN;
     }
+
 
     @PostMapping("login")
     public String processLogin(@SessionAttribute(value = "loggedUser", required = false) UserDTO loggedUser,

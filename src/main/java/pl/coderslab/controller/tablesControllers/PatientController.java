@@ -20,5 +20,25 @@ import javax.validation.Valid;
 @RequestMapping("logged/patient")
 public class PatientController {
 
+    private static final String ADD_PATIENT = "views/addPatient";
+    private final PatientDao patientDao;
+    @GetMapping("add")
+    public String showAddPatientForm(Model model) {
+        model.addAttribute("patientForm", new Patient());
+        return ADD_PATIENT;
+    }
 
+    @PostMapping("add")
+    public String addPatient(@ModelAttribute("patientForm") @Valid Patient patient,
+                             BindingResult result) {
+        if (result.hasErrors()) {
+            return ADD_PATIENT;
+        }
+        if (patient.getId() != null) {
+            patientDao.edit(patient);
+        } else {
+            patientDao.save(patient);
+        }
+        return "redirect:/logged/patient/all";
+    }
 }

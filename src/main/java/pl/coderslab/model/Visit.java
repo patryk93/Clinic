@@ -6,9 +6,9 @@ import lombok.Setter;
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import java.time.LocalDateTime;
-import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
+
 
 @Getter
 @Setter
@@ -22,11 +22,10 @@ public class Visit {
 
     @NotBlank
     @Column(name = "date")
-    private LocalDateTime date;
-
+    private String date;
 
     @Column(name = "cost")
-    private double cost;
+    private String cost;
 
     @Column(name = "description")
     private String description;
@@ -34,13 +33,16 @@ public class Visit {
     @Column(name = "patientDetails")
     private String patientDetails;
 
+    @Column(name = "patientId")
+    private Long patientId;
+
     @ManyToOne(optional = false, fetch = FetchType.EAGER)
     private Patient patient;
 
-    @ManyToOne
-    private User user;
-
-    @OneToMany
-    @JoinColumn(name = "patient_id")
-    private List<Patient> patients = new ArrayList<>();
+//    @ManyToOne
+//    private User user;
+//
+//    @OneToMany
+//    @JoinColumn(name = "patient_id")
+//    private List<Patient> patients = new ArrayList<>();
 }

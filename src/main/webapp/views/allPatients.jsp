@@ -42,7 +42,7 @@
                         <th>Imię</th>
                         <th>Nazwisko</th>
 <%--                        <th>Wyświetl kartę</th>--%>
-<%--                        <th>Dodaj wizytę</th>--%>
+                        <th>Dodaj wizytę</th>
 <%--                        <th>Edytuj</th>--%>
 <%--                        <th>Usuń</th>--%>
 
@@ -60,9 +60,9 @@
 <%--                                <td>--%>
 <%--                                    <a href="/patients/card/${patient.id}">wyświetl</a>--%>
 <%--                                </td>--%>
-<%--                                <td>--%>
-<%--                                    <a href="/visit/addVisit/${patient.id}">dodaj</a>--%>
-<%--                                </td>--%>
+                                <td>
+                                    <a href="logged/visit/add/${patient.id}">dodaj</a>
+                                </td>
 <%--                                <td>--%>
 <%--                                    <a href="/patients/edit/${patient.id}">edytuj</a>--%>
 <%--                                </td>--%>

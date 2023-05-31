@@ -9,12 +9,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76f73a20-ea8d-4f3b-8585-f34934592fa8" name="Changes" comment="All visits">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/addVisit.jsp" afterDir="false" />
+    <list default="true" id="76f73a20-ea8d-4f3b-8585-f34934592fa8" name="Changes" comment="addVisit form">
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/pagesControllers/LoggedController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/pagesControllers/LoggedController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/pagesControllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/pagesControllers/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/tablesControllers/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/tablesControllers/PatientController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/tablesControllers/VisitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/tablesControllers/VisitController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/addPatient.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/addPatient.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/dao/VisitDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/dao/VisitDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/model/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/model/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/model/Visit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/model/Visit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/database.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/addVisit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/addVisit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/allPatients.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/allPatients.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/views/logged.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/logged.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/login.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +35,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -186,7 +198,13 @@
       <workItem from="1685167636782" duration="10485000" />
       <workItem from="1685181571598" duration="4968000" />
       <workItem from="1685187582404" duration="10047000" />
-      <workItem from="1685257508674" duration="10339000" />
+      <workItem from="1685257508674" duration="10649000" />
+      <workItem from="1685373894611" duration="8443000" />
+      <workItem from="1685436095604" duration="5084000" />
+      <workItem from="1685459843091" duration="6749000" />
+      <workItem from="1685466612823" duration="319000" />
+      <workItem from="1685467065807" duration="2633000" />
+      <workItem from="1685520928824" duration="4831000" />
     </task>
     <task id="LOCAL-00001" summary="Register page">
       <created>1684562129561</created>
@@ -209,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685270262632</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="addVisit form">
+      <created>1685286415371</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1685286415371</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,6 +255,7 @@
     <MESSAGE value="Register page" />
     <MESSAGE value="Login page" />
     <MESSAGE value="All visits" />
-    <option name="LAST_COMMIT_MESSAGE" value="All visits" />
+    <MESSAGE value="addVisit form" />
+    <option name="LAST_COMMIT_MESSAGE" value="addVisit form" />
   </component>
 </project>
