@@ -2,12 +2,20 @@ package pl.coderslab.dto;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.stereotype.Repository;
+import pl.coderslab.model.User;
 
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import java.io.Serializable;
 import java.util.Objects;
 @Getter
 @Setter
-public class UserDTO {
+@Repository
+public class UserDTO implements Serializable {
 
+    @PersistenceContext
+    EntityManager entityManager;
     private Long id;
     private String login;
 
@@ -19,6 +27,10 @@ public class UserDTO {
         UserDTO userDTO = (UserDTO) o;
         return Objects.equals(id, userDTO.id) &&
                 Objects.equals(login, userDTO.login);
+    }
+
+    public User findByLogin(UserDTO login) {
+        return entityManager.find(User.class, login);
     }
 
     @Override

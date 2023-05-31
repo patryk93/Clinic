@@ -37,7 +37,16 @@
                 <h1> Dodawanie nowej wizyty dla pacjenta: ${patient.firstName} ${patient.lastName}</h1>
                 <br/>
                 <form:form modelAttribute="visitForm" method="post" action="/logged/patient/logged/visit/add">
-
+                <h4> Wybierz lekarza prowadzącego wizytę:</h4>
+<%--                    <form:select path="user.id"--%>
+<%--                                 items="${users}"--%>
+<%--                                 itemLabel="${user.firstName} ${user.lastName}"--%>
+<%--                                 itemValue="id"--%>
+<%--                                 id="users"/>--%>
+                    <form:select path="user.id" items="${users}" itemValue="id" id="users">
+                        <form:option value="">-- Wybierz użytkownika --</form:option>
+                        <form:options itemLabel="${user.firstName} ${user.lastName}" />
+                    </form:select>
                     <form:input path="date" id="date" class="form-control" name="date" placeholder="Data (wzór: DD/MM/YY HH:MM)"/><br/>
                     <form:errors path="date"/>
                     <br/>
@@ -48,6 +57,7 @@
                     <form:errors path="description"/>
                     <form:hidden path="patientId" id="patientId" />
                     <form:hidden path="patientDetails" id="patientDetails" />
+<%--                    <form:hidden path="doctorDetails" id="doctorDetails" />--%>
                     <br/>
                     <br/>
             <br/>

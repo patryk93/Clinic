@@ -65,4 +65,9 @@ public class User {
     private String confirmedPassword;
 
 
+    @Override
+    public String toString() {
+        return firstName + " " + lastName;
+    }
+
 }

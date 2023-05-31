@@ -9,23 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76f73a20-ea8d-4f3b-8585-f34934592fa8" name="Changes" comment="addVisit form">
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
+    <list default="true" id="76f73a20-ea8d-4f3b-8585-f34934592fa8" name="Changes" comment="add patient do visit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/pagesControllers/LoggedController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/pagesControllers/LoggedController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/pagesControllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/pagesControllers/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/tablesControllers/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/tablesControllers/PatientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/tablesControllers/VisitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/tablesControllers/VisitController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/dao/VisitDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/dao/VisitDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/model/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/model/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/dto/UserDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/model/Visit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/model/Visit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/database.sql" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/views/addVisit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/addVisit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/allPatients.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/allPatients.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/logged.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/logged.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/allVisits.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/allVisits.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +197,7 @@
       <workItem from="1685459843091" duration="6749000" />
       <workItem from="1685466612823" duration="319000" />
       <workItem from="1685467065807" duration="2633000" />
-      <workItem from="1685520928824" duration="4831000" />
+      <workItem from="1685520928824" duration="15948000" />
     </task>
     <task id="LOCAL-00001" summary="Register page">
       <created>1684562129561</created>
@@ -234,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685286415371</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add patient do visit">
+      <created>1685535941269</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1685535941269</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,6 +256,7 @@
     <MESSAGE value="Login page" />
     <MESSAGE value="All visits" />
     <MESSAGE value="addVisit form" />
-    <option name="LAST_COMMIT_MESSAGE" value="addVisit form" />
+    <MESSAGE value="add patient do visit" />
+    <option name="LAST_COMMIT_MESSAGE" value="add patient do visit" />
   </component>
 </project>

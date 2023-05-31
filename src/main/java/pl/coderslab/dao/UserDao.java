@@ -27,6 +27,9 @@ public class UserDao {
     public User findById(long id) {
         return entityManager.find(User.class, id);
     }
+    public User findByLogin(String login) {
+        return entityManager.find(User.class, login);
+    }
 
     public void delete(User user) {
         entityManager.remove(entityManager.contains(user) ?
@@ -37,4 +40,7 @@ public class UserDao {
         return entityManager.createQuery("SELECT u FROM User u")
                 .getResultList();
     }
+
+
+
 }

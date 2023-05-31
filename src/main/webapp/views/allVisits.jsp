@@ -39,6 +39,7 @@
         <div id="table">
           <table>
             <th>ID</th>
+            <th>Lekarz</th>
             <th>Pacjent</th>
             <th>Data</th>
             <th>Opis</th>
@@ -50,6 +51,9 @@
               <td>
                   ${visit.id}
               </td>
+                  <td>
+<%--                  ${visit.user_id}--%>
+                  </td>
               <td>
                   ${visit.patientDetails}
               </td>
