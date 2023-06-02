@@ -44,7 +44,7 @@
 <%--                        <th>Wyświetl kartę</th>--%>
                         <th>Dodaj wizytę</th>
 <%--                        <th>Edytuj</th>--%>
-<%--                        <th>Usuń</th>--%>
+                        <th>Usuń</th>
 
                         <c:forEach items="${patients}" var="patient">
                             <tr>
@@ -66,9 +66,9 @@
 <%--                                <td>--%>
 <%--                                    <a href="/patients/edit/${patient.id}">edytuj</a>--%>
 <%--                                </td>--%>
-<%--                                <td>--%>
-<%--                                    <a href="/patients/delete/${patient.id}">usuń</a>--%>
-<%--                                </td>--%>
+                                <td>
+                                    <a href="/logged/patient/logged/patient/delete/${patient.id}">usuń</a>
+                                </td>
                             </tr>
                         </c:forEach>
                     </table>

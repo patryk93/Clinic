@@ -5,12 +5,10 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 import pl.coderslab.dao.PatientDao;
 import pl.coderslab.model.Patient;
+import pl.coderslab.model.Visit;
 
 import javax.validation.Valid;
 
@@ -39,6 +37,14 @@ public class PatientController {
         } else {
             patientDao.save(patient);
         }
+        return "redirect:/logged/patient/all";
+    }
+
+    @GetMapping("/logged/patient/delete/{id}")
+    public String deleteVisit (@PathVariable Long id) {
+        Patient patient = new Patient();
+        patient.setId(id);
+        patientDao.delete(patient);
         return "redirect:/logged/patient/all";
     }
 }
