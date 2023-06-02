@@ -45,7 +45,7 @@
             <th>Opis</th>
             <th>Cena</th>
 <%--            <th>Edytuj</th>--%>
-<%--            <th>Usuń</th>--%>
+            <th>Usuń</th>
             <tr>
               <c:forEach items="${visits}" var="visit">
               <td>
@@ -69,9 +69,9 @@
 <%--              <td>--%>
 <%--                <a href="/visit/edit/${visit.id}">edytuj</a>--%>
 <%--              </td>--%>
-<%--              <td>--%>
-<%--                <a href="/visit/delete/${visit.id}">usuń</a>--%>
-<%--              </td>--%>
+              <td>
+                  <a href="/logged/patient/logged/visit/delete/${visit.id}">usuń</a>
+              </td>
             </tr>
             </c:forEach>
 

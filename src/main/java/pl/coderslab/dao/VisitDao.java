@@ -42,6 +42,12 @@ public class VisitDao {
                 visit : entityManager.merge(visit));
     }
 
+    public void delete(Long id) {
+        entityManager.createQuery("DELETE FROM Visit v WHERE v.user.id = :id")
+                .setParameter("id", id)
+                .executeUpdate();
+    }
+
     public List<Visit> findAll() {
         return entityManager.createQuery("SELECT v FROM Visit v")
                 .getResultList();

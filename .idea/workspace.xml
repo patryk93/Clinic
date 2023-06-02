@@ -9,10 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76f73a20-ea8d-4f3b-8585-f34934592fa8" name="Changes" comment="add visit">
+    <list default="true" id="76f73a20-ea8d-4f3b-8585-f34934592fa8" name="Changes" comment="logged user visit list">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/pagesControllers/LoggedController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/pagesControllers/LoggedController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/tablesControllers/VisitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/tablesControllers/VisitController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/dao/VisitDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/dao/VisitDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/allVisits.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/allVisits.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +193,7 @@
       <workItem from="1685466612823" duration="319000" />
       <workItem from="1685467065807" duration="2633000" />
       <workItem from="1685520928824" duration="15948000" />
-      <workItem from="1685689369113" duration="7992000" />
+      <workItem from="1685689369113" duration="9250000" />
     </task>
     <task id="LOCAL-00001" summary="Register page">
       <created>1684562129561</created>
@@ -236,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685694432945</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="logged user visit list">
+      <created>1685713672646</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1685713672646</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,6 +268,7 @@
     <MESSAGE value="addVisit form" />
     <MESSAGE value="add patient do visit" />
     <MESSAGE value="add visit" />
-    <option name="LAST_COMMIT_MESSAGE" value="add visit" />
+    <MESSAGE value="logged user visit list" />
+    <option name="LAST_COMMIT_MESSAGE" value="logged user visit list" />
   </component>
 </project>

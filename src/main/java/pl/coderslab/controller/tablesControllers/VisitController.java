@@ -99,6 +99,14 @@ public class VisitController {
         return "redirect:/logged/visit/all";
     }
 
+    @GetMapping("/delete/{id}")
+    public String deleteVisit (@PathVariable Long id) {
+        Visit visit = new Visit();
+        visit.setId(id);
+        visitDao.delete(visit);
+        return "redirect:/logged/visit/all";
+    }
+
     @ModelAttribute("users")
     public List<User> getAllUsers() {
         return userDao.findAll();
