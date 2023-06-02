@@ -46,4 +46,10 @@ public class VisitDao {
         return entityManager.createQuery("SELECT v FROM Visit v")
                 .getResultList();
     }
+
+    public List<Visit> findAllByUserID(long id) {
+        return entityManager.createQuery("SELECT v FROM Visit v WHERE v.user.id = :id")
+                .setParameter("id", id)
+                .getResultList();
+    }
 }

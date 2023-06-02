@@ -2,19 +2,17 @@ package pl.coderslab.controller.pagesControllers;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import pl.coderslab.dao.PatientDao;
 import pl.coderslab.dao.VisitDao;
-import pl.coderslab.model.Patient;
+import pl.coderslab.dto.UserDTO;
 
-import javax.validation.Valid;
-import java.util.List;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 @Slf4j
 @Controller
@@ -22,8 +20,10 @@ import java.util.List;
 @RequestMapping("logged")
 public class LoggedController {
 
-
-
+    @Autowired
+    HttpSession session;
+    @Autowired
+    private final HttpServletRequest request;
     private static final String ALL_PATIENTS = "views/allPatients";
     private static final String ALL_VISITS = "views/allVisits";
     private static final String MY_PROFILE = "views/myProfile";
@@ -39,9 +39,18 @@ public class LoggedController {
         return ALL_PATIENTS;
     }
 
+//    @GetMapping("visit/all")
+//    public String showAllVisits(Model model) {
+//        model.addAttribute("visits", visitDao.findAll());
+//        return ALL_VISITS;
+//    }
+
     @GetMapping("visit/all")
     public String showAllVisits(Model model) {
-        model.addAttribute("visits", visitDao.findAll());
+        HttpSession session = request.getSession();
+        UserDTO userDTO = (UserDTO) session.getAttribute("loggedUser");
+        Long id = userDTO.getId();
+        model.addAttribute("visits", visitDao.findAllByUserID(id));
         return ALL_VISITS;
     }
 
