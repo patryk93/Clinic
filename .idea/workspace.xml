@@ -11,13 +11,8 @@
   <component name="ChangeListManager">
     <list default="true" id="76f73a20-ea8d-4f3b-8585-f34934592fa8" name="Changes" comment="add patient do visit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/tablesControllers/VisitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/tablesControllers/VisitController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/dao/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/dto/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/model/Visit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/model/Visit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/addVisit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/addVisit.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/views/allVisits.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/allVisits.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -198,6 +193,7 @@
       <workItem from="1685466612823" duration="319000" />
       <workItem from="1685467065807" duration="2633000" />
       <workItem from="1685520928824" duration="15948000" />
+      <workItem from="1685689369113" duration="4980000" />
     </task>
     <task id="LOCAL-00001" summary="Register page">
       <created>1684562129561</created>

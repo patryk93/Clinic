@@ -14,6 +14,7 @@ import pl.coderslab.dto.UserDTO;
 import pl.coderslab.model.Patient;
 import pl.coderslab.model.User;
 import pl.coderslab.model.Visit;
+import pl.coderslab.repository.UserRepository;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -34,6 +35,11 @@ public class VisitController {
     @Autowired
     private final HttpServletRequest request;
     @Autowired
+    private UserRepository userRepository;
+
+    @Autowired
+    HttpSession session;
+    @Autowired
     private final UserDTO userDTO;
     private static final String ADD_VISIT = "views/addVisit";
 
@@ -51,11 +57,15 @@ public class VisitController {
 
     @GetMapping("/add/{patientId}")
     public String showAddVisitForm (@PathVariable Long patientId, Model model) {
-//        HttpSession session = request.getSession();
-//        UserDTO login = (UserDTO) session.getAttribute("loggedUser");
-////        String login = (String) session.getAttribute("loggedUser");
-//        User user = userDTO.findByLogin(login);
-//        user.setId(user.getId());
+        HttpSession session = request.getSession();
+        UserDTO userDTO = (UserDTO) session.getAttribute("loggedUser");
+        Long id = userDTO.getId();
+//        String login = (String) session.getAttribute("loggedUser");
+
+        User user = userDao.findById(id);
+
+        System.out.println("user id " + id);
+
 
 
         Visit visit = new Visit();
@@ -63,9 +73,11 @@ public class VisitController {
         Patient patient = patientDao.findById(patientId);
         System.out.println("PATIENT " + patient);
         String patientDetails = patient.getFirstName() + " " + patient.getLastName();
-//        String doctorDetails = user.getFirstName() + " " + user.getLastName();
+        String doctorDetails = user.getFirstName() + " " + user.getLastName();
+
+        System.out.println("details" + doctorDetails);
         visit.setPatientDetails(patientDetails);
-//        visit.setDoctorDetails(doctorDetails);
+        visit.setDoctorDetails(doctorDetails);
         System.out.println(visit.getPatientDetails());
         model.addAttribute("visitForm", visit);
         model.addAttribute("patient", patient);

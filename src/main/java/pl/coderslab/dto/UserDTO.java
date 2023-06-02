@@ -20,16 +20,16 @@ public class UserDTO implements Serializable {
     private String login;
 
     private String firstName;
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        UserDTO userDTO = (UserDTO) o;
-        return Objects.equals(id, userDTO.id) &&
-                Objects.equals(login, userDTO.login);
-    }
+//    @Override
+//    public boolean equals(Object o) {
+//        if (this == o) return true;
+//        if (o == null || getClass() != o.getClass()) return false;
+//        UserDTO userDTO = (UserDTO) o;
+//        return Objects.equals(id, userDTO.id) &&
+//                Objects.equals(login, userDTO.login);
+//    }
 
-    public User findByLogin(UserDTO login) {
+    public User findByLogin(String login) {
         return entityManager.find(User.class, login);
     }
 
