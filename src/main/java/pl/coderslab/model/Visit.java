@@ -48,10 +48,4 @@ public class Visit {
     @JoinColumn(name = "user_id")
     private User user;
 
-//    @ManyToOne
-//    private User user;
-//
-//    @OneToMany
-//    @JoinColumn(name = "patient_id")
-//    private List<Patient> patients = new ArrayList<>();
 }

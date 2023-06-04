@@ -10,8 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76f73a20-ea8d-4f3b-8585-f34934592fa8" name="Changes" comment="delete visit">
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/tablesControllers/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/tablesControllers/PatientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/allPatients.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/allPatients.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/pagesControllers/LoggedController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/pagesControllers/LoggedController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/tablesControllers/VisitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/tablesControllers/VisitController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,6 +193,8 @@
       <workItem from="1685467065807" duration="2633000" />
       <workItem from="1685520928824" duration="15948000" />
       <workItem from="1685689369113" duration="9673000" />
+      <workItem from="1685732754782" duration="1075000" />
+      <workItem from="1685771859805" duration="1560000" />
     </task>
     <task id="LOCAL-00001" summary="Register page">
       <created>1684562129561</created>

@@ -39,13 +39,7 @@ public class LoggedController {
         return ALL_PATIENTS;
     }
 
-//    @GetMapping("visit/all")
-//    public String showAllVisits(Model model) {
-//        model.addAttribute("visits", visitDao.findAll());
-//        return ALL_VISITS;
-//    }
-
-    @GetMapping("visit/all")
+    @GetMapping("visit/all") //wszystkie wizyty zalogowanego użytkownika
     public String showAllVisits(Model model) {
         HttpSession session = request.getSession();
         UserDTO userDTO = (UserDTO) session.getAttribute("loggedUser");

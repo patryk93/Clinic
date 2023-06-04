@@ -64,18 +64,14 @@ public class VisitController {
 
         User user = userDao.findById(id);
 
-        System.out.println("user id " + id);
-
 
 
         Visit visit = new Visit();
         visit.setPatientId(patientId);
         Patient patient = patientDao.findById(patientId);
-        System.out.println("PATIENT " + patient);
         String patientDetails = patient.getFirstName() + " " + patient.getLastName();
         String doctorDetails = user.getFirstName() + " " + user.getLastName();
 
-        System.out.println("details" + doctorDetails);
         visit.setPatientDetails(patientDetails);
         visit.setDoctorDetails(doctorDetails);
         System.out.println(visit.getPatientDetails());

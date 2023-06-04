@@ -53,12 +53,4 @@ public class Patient {
     private List<Visit> visit;
 
 
-//    @NotEmpty
-//    @ManyToMany
-//    @JoinTable(name = "patients_visits",
-//            joinColumns = @JoinColumn(name = "patient_id"),
-//            inverseJoinColumns = @JoinColumn(name = "visit_id"))
-//    private List<Visit> visits = new ArrayList<>();
-
-
 }
